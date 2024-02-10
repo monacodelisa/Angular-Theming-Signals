@@ -17,7 +17,7 @@ import { ThemeService } from '../../services/theme.service';
 export class HeaderComponent implements OnInit {
   checked: boolean = true;
   selectedTheme: string = 'dark';
-  themeService: ThemeService =inject(ThemeService);
+  themeService: ThemeService = inject(ThemeService);
 
   ngOnInit(): void {
     this.themeService.setTheme(this.selectedTheme);
