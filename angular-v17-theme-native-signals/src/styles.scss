@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+
+  .header {
+    background-color: #444;
+    color: #fff;
+  }
+
+  button {
+    background-color: #444;
+    color: #fff;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+
+  h1 {
+    color: #fff;
+  }
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+
+  .header {
+    background-color: #eaeaea;
+    color: #333;
+  }
+
+  button {
+    border-color: #d2d2d2;
+    color: gray;
+  }
+}
