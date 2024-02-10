@@ -1,1 +1,17 @@
-<p>header works!</p>
+<mat-toolbar>
+  <button mat-icon-button >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+
+  <div class="theme-control">
+    <mat-slide-toggle checked (click)="toggleTheme()"></mat-slide-toggle>
+    <button mat-icon-button>
+      @if (themeService.themeSignal() === 'dark'){
+        <mat-icon>bedtime</mat-icon>
+      } @else {
+        <mat-icon>brightness_5</mat-icon>
+      }
+    </button>
+  </div>
+</mat-toolbar>
