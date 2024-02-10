@@ -1,4 +1,6 @@
-<div class="dark">
+<div [ngClass]="themeService.themeSignal()">
   <app-header></app-header>
-  <p>Hello from app component</p>
+  <div class="content">
+    <p>Hello from app component</p>
+  </div>
 </div>

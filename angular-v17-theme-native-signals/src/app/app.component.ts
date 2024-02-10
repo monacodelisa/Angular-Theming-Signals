@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,5 @@ import { HeaderComponent } from './components/header/header.component';
 })
 export class AppComponent {
   title = 'angular-v17-theme-native-signals';
+  themeService: ThemeService = inject(ThemeService);
 }
