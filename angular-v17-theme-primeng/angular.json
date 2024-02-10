@@ -30,7 +30,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "node_modules/primeng/resources/themes/md-dark-deeppurple/theme.css",
+                "bundleName": "dark",
+                "inject": false
+              },
+              {
+                "input": "node_modules/primeng/resources/themes/md-light-deeppurple/theme.css",
+                "bundleName": "light",
+                "inject": false
+              },
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
@@ -90,12 +101,26 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "node_modules/primeng/resources/themes/md-dark-deeppurple/theme.css",
+                "bundleName": "dark",
+                "inject": false
+              },
+              {
+                "input": "node_modules/primeng/resources/themes/md-light-deeppurple/theme.css",
+                "bundleName": "light",
+                "inject": false
+              },
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ac9c6177-5702-4583-8114-a83260d769cd"
   }
 }
