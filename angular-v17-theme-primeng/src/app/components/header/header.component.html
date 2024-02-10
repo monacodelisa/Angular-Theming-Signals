@@ -1,1 +1,14 @@
-<p>header works!</p>
+<p-toolbar>
+  <div class="p-toolbar-group-start">
+      <button pButton icon="pi pi-plus" class="mr-2"></button>
+  </div>
+  <div class="p-toolbar-group-center">
+      <span class="p-input-icon-left">
+          <i class="pi pi-search"></i>
+          <input pInputText placeholder="Search" />
+      </span>
+  </div>
+  <div class="p-toolbar-group-end">
+    <p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
+  </div>
+</p-toolbar>
